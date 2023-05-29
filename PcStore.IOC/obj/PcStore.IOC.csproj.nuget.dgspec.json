@@ -4,6 +4,126 @@
     "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.IOC\\PcStore.IOC.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Domain\\PcStore.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Domain\\PcStore.Domain.csproj",
+        "projectName": "PcStore.Domain",
+        "projectPath": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Domain\\PcStore.Domain.csproj",
+        "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Infrastructure\\PcStore.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Infrastructure\\PcStore.Infrastructure.csproj",
+        "projectName": "PcStore.Infrastructure",
+        "projectPath": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Infrastructure\\PcStore.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Domain\\PcStore.Domain.csproj": {
+                "projectPath": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Domain\\PcStore.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.IOC\\PcStore.IOC.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -17,15 +137,19 @@
           "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "netstandard2.1"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {}
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Infrastructure\\PcStore.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Infrastructure\\PcStore.Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -35,8 +159,14 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -49,7 +179,7 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.NETCore.App": {
+            "NETStandard.Library": {
               "privateAssets": "all"
             }
           },
