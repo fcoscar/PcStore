@@ -347,6 +347,19 @@
           }
         }
       },
+      "PcStore.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "PcStore.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PcStore.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PcStore.Application.dll": {}
+        }
+      },
       "PcStore.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
@@ -939,6 +952,11 @@
         "version.txt"
       ]
     },
+    "PcStore.Application/1.0.0": {
+      "type": "project",
+      "path": "../PcStore.Application/PcStore.Application.csproj",
+      "msbuildProject": "../PcStore.Application/PcStore.Application.csproj"
+    },
     "PcStore.Domain/1.0.0": {
       "type": "project",
       "path": "../PcStore.Domain/PcStore.Domain.csproj",
@@ -953,6 +971,7 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 5.0.0",
+      "PcStore.Application >= 1.0.0",
       "PcStore.Infrastructure >= 1.0.0"
     ]
   },
@@ -981,6 +1000,9 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
+            "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Application\\PcStore.Application.csproj": {
+              "projectPath": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Application\\PcStore.Application.csproj"
+            },
             "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Infrastructure\\PcStore.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Infrastructure\\PcStore.Infrastructure.csproj"
             }

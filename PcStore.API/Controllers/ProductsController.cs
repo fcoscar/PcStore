@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PcStore.Application.Contract;
 using PcStore.Infrastructure.Interfaces;
 
 namespace PcStore.API.Controllers;
@@ -6,17 +7,17 @@ namespace PcStore.API.Controllers;
 [Route("api/[controller]")]
 public class ProductsController : ControllerBase
 {
-    private readonly IProductoRepository productoRepository;
+    private readonly IProductService productService;
 
-    public ProductsController(IProductoRepository productoRepository)
+    public ProductsController(IProductService productService)
     {
-        this.productoRepository = productoRepository;
+        this.productService = productService;
     }
 
     [HttpGet]
     public async Task<IActionResult> Get()
     {
-        var products = await this.productoRepository.GetAll();
+        var products = await productService.GetProducts();
         return Ok(products);
     }
 }
