@@ -42,7 +42,7 @@ public class ProductService : IProductService
         var result = new ServiceResult();
         try
         {
-            result.Data = await GetProds(id);
+            result.Data = (await GetProds(id)).FirstOrDefault();
         }
         catch (Exception e)
         {
@@ -54,7 +54,24 @@ public class ProductService : IProductService
         return result;
     }
 
-    private async Task<List<ProductGetDto>> GetProds(int? id = null)
+    public async Task<ServiceResult> GetProductByCategory(int categoryId)
+    {
+        var result = new ServiceResult();
+        try
+        {
+            result.Data = await GetProds(categoryId:categoryId);
+        }
+        catch (Exception e)
+        {
+            result.Message = "Error obteniendo productos por categoria";
+            result.Success = false;
+            logger.Log(LogLevel.Error, $"{result.Message}", e.ToString());
+        }
+        
+        return result;
+    }
+
+    private async Task<List<ProductGetDto>> GetProds(int? id = null, int? categoryId = null)
     {
         var prodList = new List<ProductGetDto>();
         try
@@ -62,6 +79,7 @@ public class ProductService : IProductService
             prodList = (from prod in await productoRepository.GetAll()
                 join cat in await categoryRepository.GetAll() on prod.CategoriaId equals cat.Id
                 where prod.Id == id || !id.HasValue
+                where prod.CategoriaId == categoryId || !categoryId.HasValue
                 select new ProductGetDto
                 {
                     Id = prod.Id,
