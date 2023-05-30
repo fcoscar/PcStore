@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PcStore.Application.Contract;
-using PcStore.Infrastructure.Interfaces;
 
 namespace PcStore.API.Controllers;
+
 [ApiController]
 [Route("api/[controller]")]
 public class ProductsController : ControllerBase

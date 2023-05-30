@@ -6,12 +6,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\PcStore.Domain\PcStore.Domain.csproj" />
+        <ProjectReference Include="..\PcStore.Domain\PcStore.Domain.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.10" />
-      <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="5.0.4" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.10"/>
+        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="5.0.4"/>
     </ItemGroup>
 
 </Project>

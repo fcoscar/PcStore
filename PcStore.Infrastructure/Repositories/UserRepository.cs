@@ -8,6 +8,7 @@ namespace PcStore.Infrastructure.Repositories
     public class UserRepository : BaseRepository<User>, IUserRepository
     {
         private readonly PcStoreContext context;
+
         public UserRepository(PcStoreContext context) : base(context)
         {
             this.context = context;

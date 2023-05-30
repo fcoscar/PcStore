@@ -2,7 +2,7 @@
 
 namespace PcStore.Application.Contract;
 
-public interface IProductService
+public interface IUserService
 {
-    public Task<ServiceResult> GetProducts();
+    public Task<ServiceResult> GetUsers();
 }

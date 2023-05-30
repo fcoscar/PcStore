@@ -8,6 +8,7 @@ namespace PcStore.Infrastructure.Repositories
     public class OrdenProductosRepository : BaseRepository<OrdenProductos>, IOrdenProductosRespository
     {
         private readonly PcStoreContext context;
+
         public OrdenProductosRepository(PcStoreContext context) : base(context)
         {
             this.context = context;

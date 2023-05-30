@@ -1,22 +1,23 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PcStore.Infrastructure.Interfaces;
+using PcStore.Application.Contract;
 
 namespace PcStore.API.Controllers;
+
 [ApiController]
 [Route("api/[controller]")]
 public class UserController : ControllerBase
 {
-    private readonly IUserRepository userRepository;
+    private readonly IUserService userService;
 
-    public UserController( IUserRepository userRepository)
+    public UserController(IUserService userService)
     {
-        this.userRepository = userRepository;
+        this.userService = userService;
     }
 
     [HttpGet]
     public async Task<IActionResult> Get()
     {
-        var users = await userRepository.GetAll();
+        var users = await userService.GetUsers();
         return Ok(users);
     }
 }

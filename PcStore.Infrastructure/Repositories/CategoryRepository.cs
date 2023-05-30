@@ -8,6 +8,7 @@ namespace PcStore.Infrastructure.Repositories
     public class CategoryRepository : BaseRepository<Category>, ICategoryRepository
     {
         private readonly PcStoreContext context;
+
         public CategoryRepository(PcStoreContext context) : base(context)
         {
             this.context = context;

@@ -8,6 +8,7 @@ namespace PcStore.Infrastructure.Repositories
     public class ProductRepository : BaseRepository<Product>, IProductoRepository
     {
         private readonly PcStoreContext context;
+
         public ProductRepository(PcStoreContext context) : base(context)
         {
             this.context = context;

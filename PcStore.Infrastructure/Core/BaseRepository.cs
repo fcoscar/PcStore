@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using PcStore.Domain.Core;
 using PcStore.Domain.Repository;
 using PcStore.Infrastructure.Context;
 
@@ -12,12 +10,13 @@ namespace PcStore.Infrastructure.Core
     {
         private readonly PcStoreContext context;
         private readonly DbSet<TEntity> myDbSet;
+
         public BaseRepository(PcStoreContext context)
         {
             this.context = context;
             myDbSet = this.context.Set<TEntity>();
         }
-        
+
         public virtual async Task<IEnumerable<TEntity>> GetAll()
         {
             return await myDbSet.ToListAsync();
@@ -39,7 +38,7 @@ namespace PcStore.Infrastructure.Core
         }
 
         public virtual async Task Update(TEntity entity)
-        { 
+        {
             myDbSet.Update(entity);
         }
 

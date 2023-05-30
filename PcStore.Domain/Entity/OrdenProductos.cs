@@ -1,6 +1,6 @@
 ﻿namespace PcStore.Domain.Entity
 {
-    public class OrdenProductos 
+    public class OrdenProductos
     {
         public int Id { get; set; }
         public int OrdenId { get; set; }
