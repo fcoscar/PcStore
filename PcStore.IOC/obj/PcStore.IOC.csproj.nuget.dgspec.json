@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.IOC\\PcStore.IOC.csproj": {}
+    "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.IOC\\PcStore.IOC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Application\\PcStore.Application.csproj": {
+    "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Application\\PcStore.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Application\\PcStore.Application.csproj",
+        "projectUniqueName": "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Application\\PcStore.Application.csproj",
         "projectName": "PcStore.Application",
-        "projectPath": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Application\\PcStore.Application.csproj",
-        "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Application\\obj\\",
+        "projectPath": "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Application\\PcStore.Application.csproj",
+        "packagesPath": "C:\\Users\\batmw\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\batmw\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -26,8 +26,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Infrastructure\\PcStore.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Infrastructure\\PcStore.Infrastructure.csproj"
+              "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Infrastructure\\PcStore.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Infrastructure\\PcStore.Infrastructure.csproj"
               }
             }
           }
@@ -61,17 +61,17 @@
         }
       }
     },
-    "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Domain\\PcStore.Domain.csproj": {
+    "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Domain\\PcStore.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Domain\\PcStore.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Domain\\PcStore.Domain.csproj",
         "projectName": "PcStore.Domain",
-        "projectPath": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Domain\\PcStore.Domain.csproj",
-        "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Domain\\obj\\",
+        "projectPath": "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Domain\\PcStore.Domain.csproj",
+        "packagesPath": "C:\\Users\\batmw\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\batmw\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -114,17 +114,17 @@
         }
       }
     },
-    "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Infrastructure\\PcStore.Infrastructure.csproj": {
+    "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Infrastructure\\PcStore.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Infrastructure\\PcStore.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Infrastructure\\PcStore.Infrastructure.csproj",
         "projectName": "PcStore.Infrastructure",
-        "projectPath": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Infrastructure\\PcStore.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Infrastructure\\PcStore.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\batmw\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\batmw\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -136,8 +136,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Domain\\PcStore.Domain.csproj": {
-                "projectPath": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Domain\\PcStore.Domain.csproj"
+              "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Domain\\PcStore.Domain.csproj": {
+                "projectPath": "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Domain\\PcStore.Domain.csproj"
               }
             }
           }
@@ -181,17 +181,17 @@
         }
       }
     },
-    "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.IOC\\PcStore.IOC.csproj": {
+    "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.IOC\\PcStore.IOC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.IOC\\PcStore.IOC.csproj",
+        "projectUniqueName": "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.IOC\\PcStore.IOC.csproj",
         "projectName": "PcStore.IOC",
-        "projectPath": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.IOC\\PcStore.IOC.csproj",
-        "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.IOC\\obj\\",
+        "projectPath": "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.IOC\\PcStore.IOC.csproj",
+        "packagesPath": "C:\\Users\\batmw\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.IOC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\batmw\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -203,11 +203,11 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Application\\PcStore.Application.csproj": {
-                "projectPath": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Application\\PcStore.Application.csproj"
+              "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Application\\PcStore.Application.csproj": {
+                "projectPath": "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Application\\PcStore.Application.csproj"
               },
-              "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Infrastructure\\PcStore.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Infrastructure\\PcStore.Infrastructure.csproj"
+              "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Infrastructure\\PcStore.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Infrastructure\\PcStore.Infrastructure.csproj"
               }
             }
           }

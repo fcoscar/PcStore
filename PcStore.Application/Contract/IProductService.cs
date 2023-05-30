@@ -5,4 +5,5 @@ namespace PcStore.Application.Contract;
 public interface IProductService
 {
     public Task<ServiceResult> GetProducts();
+    public Task<ServiceResult> GetProductById(int id);
 }
