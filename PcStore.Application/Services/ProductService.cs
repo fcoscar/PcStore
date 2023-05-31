@@ -42,7 +42,7 @@ public class ProductService : IProductService
         var result = new ServiceResult();
         try
         {
-            result.Data = (await GetProds(id)).FirstOrDefault();
+            result.Data = (await GetProds(id:id)).FirstOrDefault();
         }
         catch (Exception e)
         {
@@ -74,9 +74,9 @@ public class ProductService : IProductService
     private async Task<List<ProductGetDto>> GetProds(int? id = null, int? categoryId = null)
     {
         var prodList = new List<ProductGetDto>();
-        try
+        try 
         {
-            prodList = (from prod in await productoRepository.GetAll()
+            prodList = (from prod in (await productoRepository.GetAll())
                 join cat in await categoryRepository.GetAll() on prod.CategoriaId equals cat.Id
                 where prod.Id == id || !id.HasValue
                 where prod.CategoriaId == categoryId || !categoryId.HasValue

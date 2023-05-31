@@ -28,7 +28,7 @@ public class ProductsController : ControllerBase
         return Ok(products);
     }
 
-    [HttpGet("categoria/{categoryid:int}")]
+    [HttpGet("categoria/{categoryId:int}")]
     public async Task<IActionResult> GetByCategory(int categoryId)
     {
         var products = await productService.GetProductByCategory(categoryId);

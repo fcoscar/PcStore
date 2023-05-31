@@ -9,7 +9,7 @@ namespace PcStore.Domain.Core
         public int? IdUsuarioCreacion { get; set; }
         public DateTime? FechaMod { get; set; }
         public int? IdUsuarioMod { get; set; }
-        public bool Eliminado { get; set; }
-        public int? IdUsuarioElimino { get; set; }
+        public bool Eliminado { get; set; } = false;
+        public int? IdUsuarioElimino { get; set; } = null;
     }
 }

@@ -27,9 +27,10 @@ namespace PcStore.Infrastructure.Core
             return await myDbSet.FindAsync(id);
         }
 
-        public virtual async Task Save(TEntity entity)
+        public virtual async Task<TEntity> Save(TEntity entity)
         {
             await myDbSet.AddAsync(entity);
+            return entity;
         }
 
         public virtual async Task Save(params TEntity[] entities)

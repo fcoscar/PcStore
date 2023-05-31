@@ -6,7 +6,6 @@ namespace PcStore.Domain.Entity
     {
         public int ClientId { get; set; }
         public string ClienteName { get; set; }
-
         public decimal SubTotal { get; set; }
         public decimal Total { get; set; }
         public decimal Impuesto { get; set; }

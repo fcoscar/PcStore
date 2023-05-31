@@ -1,4 +1,5 @@
-﻿using PcStore.Domain.Entity;
+﻿using System.Threading.Tasks;
+using PcStore.Domain.Entity;
 using PcStore.Domain.Repository;
 
 namespace PcStore.Infrastructure.Interfaces

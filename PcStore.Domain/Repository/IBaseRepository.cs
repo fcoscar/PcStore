@@ -7,7 +7,7 @@ namespace PcStore.Domain.Repository
     {
         Task<IEnumerable<TEntity>> GetAll();
         Task<TEntity> GetEntityById(int id);
-        Task Save(TEntity entity);
+        Task<TEntity> Save(TEntity entity);
         Task Save(params TEntity[] entities);
         Task Update(TEntity entity);
         Task Update(params TEntity[] entities);

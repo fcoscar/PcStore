@@ -8,19 +8,19 @@
     ".NETStandard,Version=v2.1": []
   },
   "packageFolders": {
-    "C:\\Users\\batmw\\.nuget\\packages\\": {}
+    "C:\\Users\\Oscar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Domain\\PcStore.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Domain\\PcStore.Domain.csproj",
       "projectName": "PcStore.Domain",
-      "projectPath": "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Domain\\PcStore.Domain.csproj",
-      "packagesPath": "C:\\Users\\batmw\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\batmw\\RiderProjects\\PcStore\\PcStore.Domain\\obj\\",
+      "projectPath": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Domain\\PcStore.Domain.csproj",
+      "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Oscar\\RiderProjects\\PcStore\\PcStore.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\batmw\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"

@@ -16,11 +16,14 @@ namespace PcStore.IOC
             services.AddScoped<IProductoRepository, ProductRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IOrdenProductosRespository, OrdenProductosRepository>();
+            services.AddScoped<IOrdenRepository, OrdenRepository>();
 
             //services
             services.AddTransient<IProductService, ProductService>();
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<ICategoryService, CategoryService>();
+            services.AddTransient<IOrdenService, OrdenService>();
         }
 
         public static void AddContextDependecy(this IServiceCollection services, string connString)
