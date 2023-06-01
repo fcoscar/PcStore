@@ -2,6 +2,8 @@
 using PcStore.Application.Contract;
 using PcStore.Application.Core;
 using PcStore.Application.Dtos.Product;
+using PcStore.Application.Extensions;
+using PcStore.Domain.Entity;
 using PcStore.Infrastructure.Interfaces;
 
 namespace PcStore.Application.Services;
@@ -68,6 +70,23 @@ public class ProductService : IProductService
             logger.Log(LogLevel.Error, $"{result.Message}", e.ToString());
         }
         
+        return result;
+    }
+
+    public async Task<ServiceResult> SaveProd(ProductAddDto productAddDto)
+    {
+        var result = new ServiceResult();
+        try
+        {
+            var newProd = productAddDto.ConvertProductAddDtoToProduct();
+            await productoRepository.Save(newProd);
+        }
+        catch (Exception e)
+        {
+            result.Message = "Error gurdando productos";
+            result.Success = false;
+            logger.Log(LogLevel.Error, $"{result.Message}", e.ToString());
+        }
         return result;
     }
 

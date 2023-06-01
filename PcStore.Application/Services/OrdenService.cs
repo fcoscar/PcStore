@@ -70,6 +70,7 @@ public class OrdenService : IOrdenService
             newOrden.SubTotal = subTotal;
             newOrden.Impuesto = subTotal * (decimal)0.18;
             newOrden.Total = newOrden.SubTotal + newOrden.Impuesto;
+            
             var orderId = await ordenRepository.Save(newOrden);
             foreach (var item in newOrdProds)
             {

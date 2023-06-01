@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PcStore.Application.Contract;
+using PcStore.Application.Dtos.Product;
 
 namespace PcStore.API.Controllers;
 
@@ -33,5 +34,12 @@ public class ProductsController : ControllerBase
     {
         var products = await productService.GetProductByCategory(categoryId);
         return Ok(products);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Add(ProductAddDto productAddDto)
+    {
+        await productService.SaveProd(productAddDto);
+        return Ok();
     }
 }
