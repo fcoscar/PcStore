@@ -17,6 +17,19 @@ public static class OrderExtension
         };
     }
 
+    public static OrdenProductoGetDto ConvertOrdenProductToOrdenProductoGetDto(this OrdenProductos ordenProductos)
+    {
+        return new OrdenProductoGetDto()
+        {
+            //OrdenId = ordenProductAddDto.OrdenId,
+            ProductId = ordenProductos.ProductId,
+            ProductName = ordenProductos.ProductName,
+            ProductDescription = ordenProductos.ProductDescription,
+            Cantidad = ordenProductos.Cantidad,
+            PrecioPorProducto = ordenProductos.PrecioPorProducto
+        };
+    }
+    
     public static OrdenProductos ConvertOrdenProductAddToOrdenProduct(this OrdenProductAddDto ordenProductAddDto)
     {
         return new OrdenProductos()

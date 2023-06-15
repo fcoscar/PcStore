@@ -103,7 +103,7 @@ public class OrdenService : IOrdenService
                     Impuesto = ord.Impuesto,
                     Total = ord.Total,
                     FechaCreacion = ord.FechaCreacion,
-                    OrdProd = ords.ToList()
+                    OrdProd = ords.Select(p => p.ConvertOrdenProductToOrdenProductoGetDto()).ToList()
                 }).ToList(); }
         catch (Exception e)
         {

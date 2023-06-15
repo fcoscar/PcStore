@@ -11,5 +11,5 @@ public class OrdenGetDto
     public decimal Impuesto { get; set; }
     public decimal Total { get; set; }
     public DateTime FechaCreacion { get; set; }
-    public List<OrdenProductos> OrdProd { get; set; }
+    public List<OrdenProductoGetDto> OrdProd { get; set; }
 }
